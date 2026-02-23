@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="img/favicon-32x32.png" type="image/icono">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BURNOUT - Banda de metal originaria de Chillán, Chile.">
+  <title>Burnout - Oficial</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================================================
+     NAV
+     ================================================ -->
+<nav>
+  <a href="#inicio" class="nav-logo">
+    <img src="img/logo burnout_transparente.png" alt="Burnout" class="nav-logo-img">
+  </a>
+
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#noticias">Noticias</a></li>
+    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+    <li><a href="#integrantes">Integrantes</a></li>
+    <li><a href="#musica">Música</a></li>
+    <li><a href="#fechas">Fechas</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- ================================================
+     HERO
+     ================================================ -->
+<section id="inicio">
+
+  <!-- VIDEO DE FONDO -->
+  <video
+    class="hero-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    poster="img/poster.png"
+  >
+    <source src="img/Video-fondoo.webm" type="video/webm">
+  </video>
+
+  <!-- Oscurecedor encima del video -->
+  <div class="hero-overlay"></div>
+
+  <!-- Tu contenido existente (no cambia nada aquí) -->
+  <div class="hero-content">
+    
+    <div class="hero-tagline">De Chillán para el mundo</div>
+    <div class="hero-cta">
+      <a href="#musica" class="btn-red">Escuchar Música</a>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span></span></div>
+
+</section>
+
+<!-- ================================================
+     NOTICIAS
+     ================================================ -->
+<section id="noticias">
+  <div class="container">
+    <h2 class="section-title">Últimas Noticias</h2>
+
+    <div class="news-slider">
+      <div class="news-track" id="newsTrack">
+
+        <!-- Noticia 1 -->
+        <div class="news-card">
+          <div class="news-img-placeholder">
+            <img src="img/metalbattle.png" alt="wikend metal battle chile" class="news-img">
+          </div>
+          <div>
+            <div class="news-date">01 de noviembre, 2025</div>
+            <h3>Wacken Metal Battle Chile</h3>
+            <p>La segunda fecha del evento Wacken Metal Battle Chile se llevó a cabo en Concepción, donde tuvimos la oportunidad de presentarnos junto a cinco bandas más en una intensa batalla musical, demostrando todos el talento que tienen sobre el escenario. La zona sur volvió a vibrar con lo mejor del metal nacional en una jornada cargada de energía y pasión.</p>
+          </div>
+        </div>
+
+        <!-- Noticia 2 -->
+        <div class="news-card">
+          <div class="news-img-placeholder">
+            <img src="img/Chocloneta.png"     alt="Chocloneta 25 aniversario" class="news-img">
+          </div>
+          <div>
+            <div class="news-date">04 de julio, 2025</div>
+            <h3>Chocloneta: 25° Aniversario</h3>
+            <p>El pasado 4 de julio de 2025 se celebró el vigésimo quinto aniversario de Chocloneta, evento en el que tuvimos el privilegio de participar para conmemorar este importante hito durante su gira por el sur de Chile. Registros y detalles en nuestras redes sociales.</p>
+          </div>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="news-card">
+          <div class="news-img-placeholder">
+            <img src="img/portada-disco.jpg" alt="disco enajenado burnout" class="news-img">
+          </div>
+          <div>
+            <div class="news-date">07 de Marzo, 2025</div>
+            <h3>Disco Enajenado</h3>
+            <p>El pasado 7 de marzo del 2025 se llevó a cabo el lanzamiento del primer trabajo discográfico de BURNOUT, titulado "ENAJENADO". Te invitamos a escucharlo de comienzo a fin para una mejor experiencia auditiva. Disponible en todas las plataformas.</p>
+            <a href="#musica" class="btn-red">Escuchar ahora</a>
+          </div>
+        </div>
+
+        <!-- Noticia 4 -->
+        <div class="news-card">
+          <div class="news-img-placeholder">
+             <img src="img/portada disco en vivo_v2_4.jpg" alt="Portada disco en vivo Burnout" class="news-img">
+          </div>
+          <div>
+            <div class="news-date">30 de Mayo, 2025</div>
+            <h3>Lanzamiento Show en vivo Crearock</h3>
+            <p>Estamos emocionados de anunciar el lanzamiento de nuestro show en vivo en el espacio Crearock, disponible en Youtube. Una experiencia visual y sonora que captura la esencia de BURNOUT en vivo.</p>
+            <a href="https://www.youtube.com/watch?v=nKHFXmpzD9o" target="_blank" rel="noopener" class="btn-red">Ver ahora</a>
+          </div>
+        </div>
+
+      </div><!-- /news-track -->
+    </div><!-- /news-slider -->
+
+    <div class="slider-controls">
+      <button class="slider-btn" id="prevNews" aria-label="Anterior">&#8249;</button>
+      <button class="slider-btn" id="nextNews" aria-label="Siguiente">&#8250;</button>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+</section>
+
+<!-- ================================================
+     SOBRE NOSOTROS
+     ================================================ -->
+<section id="sobre-nosotros">
+  <div class="container">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <div class="about-grid">
+      <img src="img/fondo.png" alt="fondo" class="about-img-placeholder">
+      
+      <div class="about-text">
+        <img src="img/logo burnout_transparente.png" alt="Burnout" class="about-logo-img">
+        <p><strong>BURNOUT</strong> es una banda de metal originaria de <em>Chillán, Chile</em>, formada en junio del 2022.</p>
+        <p><em>"Nuestra pasión es crear música potente y auténtica que conecte con nuestro público."</em></p>
+        <p>El sonido que define a la banda fusiona distintos subgéneros del metal como el Groove, Thrash, Nü, HxC, etc. Forjando así una identidad única y bien recibida en la escena nacional.</p>
+        <p>En lo que va de su trayectoria, <strong>BURNOUT</strong> ha compartido escenario con importantes bandas del circuito nacional emergente, llevando su música a diversos espacios y eventos donde resuena el Rock y el Metal.</p>
+        <p>Cada presentación es una descarga de energía donde lo que transmiten es la esencia de sus letras y la fuerza de su sonido característicamente potente.</p>
+        <p>La banda centra sus esfuerzos en ir creciendo y expandiendo su alcance, a través de la difusión en sus Redes sociales y shows en vivo, manteniendo siempre presente la autenticidad, humildad y la pasión que les caracteriza desde sus inicios.</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Años de trayectoria</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Tocatas realizadas</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Temas originales</span>
+          </div>
+        </div>
+        <a href="https://linktr.ee/burnout.chile" target="_blank" rel="noopener" class="btn-red">Linktree Burnout</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     INTEGRANTES (FLIP CARDS)
+     ================================================ -->
+<section id="integrantes">
+  <div class="container">
+    <h2 class="section-title">Integrantes</h2>
+    <p style="text-align:center;color:var(--gray);margin-top:-2rem;margin-bottom:2.5rem;font-size:0.85rem;letter-spacing:1px;">
+      Pasa el cursor sobre la tarjeta para ver más
+    </p>
+    <div class="members-grid">
+
+      <!-- Bryan -->
+      <div class="flip-card" role="button" tabindex="0" aria-label="Ver info de Bryan">
+        <div class="flip-card-inner">
+          <div class="flip-front">
+            <!-- Reemplaza con: <img src="img/bryan.png" alt="Bryan"> -->
+            <img src="img/bryan.png" alt="Bryan">
+          </div>
+          <div class="flip-back">
+            <h3>Bryan</h3>
+            <div class="member-role">Batería</div>
+            <div class="member-quote">"El Pulso y la Energía de BURNOUT"</div>
+            <div class="member-desc">Con su técnica y potencia, Bryan marca el ritmo que define el sonido de la banda. Su energía detrás del kit es el motor que impulsa cada presentación.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jorge -->
+      <div class="flip-card" role="button" tabindex="0" aria-label="Ver info de Jorge">
+        <div class="flip-card-inner">
+          <div class="flip-front">
+            <!-- Reemplaza con: <img src="img/jorge.png" alt="Jorge"> -->
+            <img src="img/jorge.png" alt="Jorge">
+          </div>
+          <div class="flip-back">
+            <h3>Jorge</h3>
+            <div class="member-role">Bajo y Voz</div>
+            <div class="member-quote">"La Voz y el Groove de BURNOUT"</div>
+            <div class="member-desc">Jorge combina líneas de bajo contundentes con una voz única y potente, la cual da vida a nuestras letras. Su versatilidad hace de él el corazón melódico de la banda.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nicolás -->
+      <div class="flip-card" role="button" tabindex="0" aria-label="Ver info de Nicolás">
+        <div class="flip-card-inner">
+          <div class="flip-front">
+            <!-- Reemplaza con: <img src="img/niko.png" alt="Nicolás"> -->
+            <img src="img/niko.png" alt="Nicolás">
+          </div>
+          <div class="flip-back">
+            <h3>Nicolás</h3>
+            <div class="member-role">Guitarra y Coros</div>
+            <div class="member-quote">"Los Riffs y la Segunda Voz de BURNOUT"</div>
+            <div class="member-desc">Nicolás construye los cimientos sonoros que caracterizan a la banda. Sus riffs agresivos y precisos, combinados con los coros, dan a BURNOUT su firma inconfundible.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     MÚSICA
+     ================================================ -->
+<section id="musica">
+  <div class="container">
+    <h2 class="section-title">Música</h2>
+
+    <div class="music-player">
+      <!-- Header -->
+      <div class="player-header">
+        <div class="player-header-title">Reproductor Oficial · Enajenado 2025</div>
+      </div>
+
+      <!-- Now Playing -->
+      <div class="now-playing">
+        <div class="track-info">
+          <div class="track-art">🔥</div>
+          <div>
+            <div class="track-name-display" id="playerTrackName">Selecciona una canción</div>
+            <div class="track-album" id="playerTrackAlbum">BURNOUT</div>
+          </div>
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="progress-bar" id="progressBar" role="slider" aria-label="Progreso de reproducción">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="time-labels">
+          <span id="timeElapsed">0:00</span>
+          <span id="timeDuration">0:00</span>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <div class="player-controls">
+        <button class="ctrl-btn" id="shuffleBtn" title="Mezclar">⇄</button>
+        <button class="ctrl-btn" id="prevBtn"    title="Anterior">⏮</button>
+        <button class="ctrl-btn play-btn" id="playBtn" title="Reproducir/Pausar">
+          <span id="playIcon">▶</span>
+        </button>
+        <button class="ctrl-btn" id="nextBtn"    title="Siguiente">⏭</button>
+        <button class="ctrl-btn" id="repeatBtn"  title="Repetir">↻</button>
+      </div>
+
+      <!-- Volumen -->
+      <div class="volume-row">
+        <span class="volume-icon">🔈</span>
+        <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.05" value="0.8" aria-label="Volumen">
+        <span class="volume-icon">🔊</span>
+      </div>
+
+      <!-- Lista de pistas -->
+      <ul class="track-list" id="trackList"></ul>
+    </div>
+
+    <!-- Plataformas -->
+    <div class="streaming-platforms">
+      <a href="https://open.spotify.com/artist/588aIj6XhAbGugzinVLX2Q" target="_blank" rel="noopener">
+        <img src="img/Spotify_23464.png" alt="Spotify">
+        <span>Spotify</span>
+      </a>
+      <a href="https://music.apple.com/us/search?term=burnout.chile" target="_blank" rel="noopener">
+        <img src="img/apple_music_android_logo_icon_134021.png" alt="Apple Music">
+        <span>Apple Music</span>
+      </a>
+      <a href="https://music.youtube.com/search?q=burnout.chile" target="_blank" rel="noopener">
+        <img src="img/youtube_music_icon_161084.png" alt="YouTube Music">
+        <span>YouTube Music</span>
+      </a>
+      <a href="https://music.amazon.com/search/burnout.chile" target="_blank" rel="noopener">
+        <img src="img/amazon_music_macos_bigsur_icon_190403.png" alt="Amazon Music">
+        <span>Amazon Music</span>
+      </a>
+    </div>
+</section>
+
+<!-- ================================================
+     FECHAS Y EVENTOS
+     ================================================ -->
+<section id="fechas">
+  <div class="container">
+    <h2 class="section-title">Fechas y Eventos</h2>
+    <p class="fechas-intro">Consulta nuestras próximas presentaciones y eventos especiales.</p>
+
+    <!-- Botón para mostrar panel admin -->
+    <button class="admin-toggle-btn" id="adminToggle">🔒 Modo Administrador</button>
+
+    <!-- Panel de administración -->
+    <div class="admin-panel" id="adminPanel">
+      <h4 id="adminPanelTitle">🔒 Acceso Administrador</h4>
+      <div class="admin-login" id="loginRow">
+        <input type="email" id="adminEmail" placeholder="Email administrador">
+        <div class="pw-wrapper">
+          <input type="password" id="adminPw" placeholder="Contraseña">
+          <button class="eye-btn" id="toggleEye" title="Mostrar/ocultar">
+            <img src="img/ojo.png" alt="Mostrar contraseña" id="eyeIcon">
+          </button>
+        </div>
+        <button class="btn-red" id="adminLoginBtn">Acceder</button>
+        <button class="btn-red" id="adminCancelBtn" style="background:#2a2a2a;">Cancelar</button>
+      </div>
+      <div class="admin-error" id="adminError"></div>
+      <div class="admin-success" id="adminSuccess"></div>
+      <button class="btn-red" id="adminLogout" style="display:none;background:#333;margin-top:0.5rem;">Cerrar sesión</button>
+      <div class="add-event-form" id="addEventForm">
+        <h4 id="formTitle">➕ Agregar Evento</h4>
+        <div class="event-inputs">
+          <input type="text" id="evDate"  placeholder="Fecha (ej: 15 Mar 2026)">
+          <input type="text" id="evEvent" placeholder="Nombre del evento">
+          <input type="text" id="evPlace" placeholder="Lugar / Ciudad">
+        </div>
+        <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+          <button class="btn-red" id="addEventBtn">Agregar Evento</button>
+          <button class="btn-red" id="cancelEditBtn" style="display:none;background:#444;">✕ Cancelar edición</button>
+        </div>
+      </div>
+    </div><!-- FIN adminPanel -->
+
+    <!-- Tabla FUERA del adminPanel (visible para todos) -->
+    <table class="events-table">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Evento</th>
+          <th>Lugar</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="eventsBody"></tbody>
+    </table>
+
+    <p class="events-note">"Más información en nuestras redes sociales"</p>
+  </div>
+</section>
+<!-- ================================================
+     GALERÍA
+     ================================================ -->
+<section id="galeria">
+  <div class="container">
+    <h2 class="section-title">Galería</h2>
+    <div class="gallery-grid">
+      <!--
+        Para usar imágenes reales reemplaza cada div.gallery-placeholder
+        con: <img src="img/tuFoto.jpg" alt="Descripción">
+      -->
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 013110.png" alt="Galería 1"><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 013131.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 013203.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 013239.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 013249.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 013302.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 022112.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 022217.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 022322.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 022333.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/Captura de pantalla 2025-05-02 022343.png" alt=""><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="img/grupal.png" alt=""><div class="gallery-overlay"></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería ampliada">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lbClose" aria-label="Cerrar">✕</button>
+    <button class="lightbox-nav lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+    <div class="lightbox-img-wrap" id="lbContent"></div>
+    <button class="lightbox-nav lb-next" id="lbNext" aria-label="Siguiente">›</button>
+  </div>
+</div>
+
+<!-- ================================================
+     CONTACTO
+     ================================================ -->
+<section id="contacto">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <div class="contact-form">
+      <p class="contact-intro">¿Quieres contactarnos o tienes alguna pregunta? ¡Escríbenos!</p>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="cNombre">Nombre</label>
+          <input type="text" id="cNombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="cEmail">Email</label>
+          <input type="email" id="cEmail" placeholder="tu@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="cAsunto">Asunto</label>
+          <input type="text" id="cAsunto" placeholder="Asunto del mensaje" required>
+        </div>
+        <div class="form-group">
+          <label for="cMensaje">Mensaje</label>
+          <textarea id="cMensaje" placeholder="Tu mensaje..." required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-red form-submit">Enviar Mensaje</button>
+        </div>
+      </form>
+      <div class="form-success" id="contactSuccess">Mensaje enviado correctamente.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <img src="img/logo burnout_transparente.png" alt="Burnout" class="footer-logo-img">
+  <div class="social-links">
+    <a href="https://instagram.com/burnout.chile" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://open.spotify.com/artist/588aIj6XhAbGugzinVLX2Q" target="_blank" rel="noopener">Spotify</a>
+    <a href="https://www.youtube.com/@burnout.chile./featured" target="_blank" rel="noopener">YouTube</a>
+    <a href="mailto:contacto@burnout.cl">Email</a>
+  </div>
+  <p class="copyright">© 2025 Burnout. Todos los derechos reservados.</p>
+</footer>
+
+<a href="#inicio" class="back-top" aria-label="Volver arriba">↑</a>
+
+<!-- ================================================
+     SCRIPTS (orden importa)
+     ================================================ -->
+<script src="js/slider.js"></script>
+<script src="js/player.js"></script>
+<script src="js/events.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  setTimeout(function() {
+    var tbody = document.getElementById('eventsBody');
+    var evs = JSON.parse(localStorage.getItem('burnout_events') || '[]');
+    if (!tbody || evs.length === 0) return;
+    tbody.innerHTML = '';
+    evs.forEach(function(ev) {
+      var tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td style="padding:1rem;color:#c0c0c0;border-bottom:1px solid #1c1c1c;">' + ev.date + '</td>' +
+        '<td style="padding:1rem;color:#c0c0c0;border-bottom:1px solid #1c1c1c;">' + ev.name + '</td>' +
+        '<td style="padding:1rem;color:#c0c0c0;border-bottom:1px solid #1c1c1c;">' + ev.place + '</td>' +
+        '<td style="padding:1rem;border-bottom:1px solid #1c1c1c;"></td>' +
+        '<td style="padding:1rem;border-bottom:1px solid #1c1c1c;"></td>';
+      tbody.appendChild(tr);
+    });
+  }, 800);
+</script>
+
+
+
+<!-- Modal de confirmación -->
+<div class="confirm-modal" id="confirmModal">
+  <div class="confirm-box">
+    <p id="confirmMsg">¿Estás seguro?</p>
+    <div class="confirm-btns">
+      <button class="btn-red" id="modalConfirm">✔ Confirmar</button>
+      <button class="btn-red" id="modalCancel" style="background:#333;">✕ Cancelar</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
