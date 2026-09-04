@@ -606,9 +606,17 @@ section { padding: 6rem 2rem; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
   flex-shrink: 0;
+  overflow: hidden;
 }
+
+.track-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .track-name-display {
   font-family: 'Oswald', sans-serif;
   font-size: 1.3rem;
