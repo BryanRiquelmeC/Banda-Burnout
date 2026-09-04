@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
       isAdmin   = true;
 
       clearMessages();
-      showSuccess('Acceso concedido. Bienvenido administrador.');
+      showSuccess('Acceso concedido. Póngale nomás papito lindo.');
       const panelTitle = document.getElementById('adminPanelTitle');
       const loginRow   = document.getElementById('loginRow');
       const logoutBtn  = document.getElementById('adminLogout');
